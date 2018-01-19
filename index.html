@@ -8,63 +8,54 @@
     <title>ok funciona!</title>
     <link rel="stylesheet" href="./docs/css/main.css">
     <link rel="stylesheet" href="./docs/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="btnHome">Home</a>
+            <i class="material-icons" id="menuOpen" onclick="openMenu()">menu</i>
+        </nav>
         <img class="logo" src="./docs/img/icon.png" alt="icone do ok funciona">
         <img class="logo2" src="./docs/img/title.png" alt="">
         <p class="logo-description">Ou pelo o menos deveria...</p>
+
+
+        <div id="menu">
+            <i class="material-icons" id="menuClose" onclick="closeMenu()">close</i>
+            <p class="menu-title">Menu</p>
+            <div class="menu-links">
+                <a href="#">Home</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre</a>
+                <a href="#">Equipe</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <div class="social">
+                <a href="#">medium / </a>
+                <a href="#">twitter / </a>
+                <a href="#">instagram / </a>
+                <a href="#">youtube / </a>
+                <a href="#">github</a>
+            </div>
+        </div>
     </header>
 
     <section class="recent-posts">
-        <h2 class="recent">Publicados recentemente:</h2>
+        <p class="recent">Publicados recentemente:</p>
+
         <div class="post">
             <p class="post-data">18/jan/2018, em
                 <a href="#">tutorial</a>
             </p>
             <a href="./docs/beta/post.html" class="post-title">
-                <h1>Título do post ok funciona!</h1>
+                <h1>Hello World</h1>
             </a>
-            <p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nemo amet perspiciatis, saepe quas illo exercitationem
-                architecto veritatis ducimus reprehenderit nesciunt commodi laborum consequatur. Unde modi sed odit. Magnam,
-                architecto?
-            </p>
-        </div>
-        <div class="post">
-            <p class="post-data">18/jan/2018, em
-                <a href="#">tutorial</a>
-            </p>
-            <a href="#" class="post-title">
-                <h1>Título do post ok funciona!</h1>
-            </a>
-            <p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nemo amet perspiciatis, saepe quas illo exercitationem
-                architecto veritatis ducimus reprehenderit nesciunt commodi laborum consequatur. Unde modi sed odit. Magnam,
-                architecto?
-            </p>
-        </div>
-        <div class="post">
-            <p class="post-data">18/jan/2018, em
-                <a href="#">tutorial</a>
-            </p>
-            <a href="#" class="post-title">
-                <h1>Título do post ok funciona!</h1>
-            </a>
-            <p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nemo amet perspiciatis, saepe quas illo exercitationem
-                architecto veritatis ducimus reprehenderit nesciunt commodi laborum consequatur. Unde modi sed odit. Magnam,
-                architecto?
-            </p>
-        </div>
-        <div class="post">
-            <p class="post-data">18/jan/2018, em
-                <a href="#">tutorial</a>
-            </p>
-            <a href="#" class="post-title">
-                <h1>Título do post ok funciona!</h1>
-            </a>
-            <p class="post-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nemo amet perspiciatis, saepe quas illo exercitationem
-                architecto veritatis ducimus reprehenderit nesciunt commodi laborum consequatur. Unde modi sed odit. Magnam,
-                architecto?
+            <p class="post-description">
+                Olá pessoas, meu nome é Breno e esse é o meu blog "pessoal". O objetivo desse blog é compartilhar minhas ideias e experiências
+                sobre os assuntos que me interessa com vocês.
             </p>
         </div>
 
@@ -78,13 +69,15 @@
         <a href="#">medium / </a>
         <a href="#">twitter / </a>
         <a href="#">instagram / </a>
-        <a href="#">youtube / <a>
+        <a href="#">youtube / </a>
         <a href="#">github</a>
     </div>
 
-    <footer class="footer"> 
+    <footer class="footer">
         <p>Criado por Breno Freitas© • Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./docs/javascript/main.js"></script>
 </body>
 
 </html>

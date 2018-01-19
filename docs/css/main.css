@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,900|Zilla+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:900');
 
 /*
-font-family: 'Zilla Slab', serif;
+font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
@@ -12,22 +12,26 @@ font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
+body{
+    width: 100%;
+    max-width: 100%;
+    font-size: 17pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+    background-color: #FAFAFA;
+    color: #383434;
+}
+
 h1{
-    font-weight: 900;
+    font-size: 37pt !important;
+    font-weight: 400 !important;
 }
 
 a, p{
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-    font-weight: 300;
-    color: #888;
-}
-
-p{  
-    margin: .7em 0;
-    line-height: 25px;
-    font-family: 'Zilla Slab', serif;
-    color: #444;
-    transition: all .1s linear;
+    font-weight: 400 !important;
+    color: #666;
 }
 
 a:hover{
@@ -35,55 +39,190 @@ a:hover{
     transition: all .1s linear;
 }
 
-body{
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    font-size: 17pt;
-    font-family: 'Roboto', sans-serif;
+p{  
+    color: #555;
+    line-height: 25px;
     font-weight: 400 !important;
-    background-color: #FFFFFF;
-    color: #383434;
+    transition: all .1s linear;
+}
+
+i {
+    font-size: 27pt !important;
+}
+
+#menu{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: -101%;
+    width: 101%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+#menuOpen{
+    margin: 1em;
+    cursor: pointer;
+    color: #FFF;
+    transition: all .1s linear;
+}
+
+#menuOpen:hover{
+    color: #57A3E8;
+    transition: all .1s linear;
+}
+
+#menuClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    color: #333;
+}
+
+.menu-title{
+    font-size: 25pt;
+    margin: 1em;
+    margin-top: 2em;
+    color: #333;
+}
+
+.menu-links{
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-links a{
+    font-size: 20px;
+    margin: .5em 0;
+    color: #333;
+    transition: all .1s linear;
+}
+
+.menu-links a:hover{
+    color: #57A3E8;
+    transition: all .1s linear;
+}
+
+.navbar{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    color: #FFF;
+}
+
+.btnHome{
+    position: absolute;
+    top: 2.2em;
+    right: 5.5em;
+    padding: 5px 10px;
+    border: 1px solid #57A3E8;
+    color: #FFF;
 }
 
 .hero{
     width: 100%;
-    height: 50vh;
+    padding: 4em 0;
+    height: 45%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #383434;
+    background-color: #222;
     color: #FFFFFF !important;
 }
 
 .logo{
-    max-width: 80px;
-    margin: 0 auto;
-    margin-top: 14vh;   
+    max-width: 80px !important;
+    margin: 0 auto !important;
 }
 
 .logo2{
-    max-width: 200px;
-    margin: 1em auto;
-    font-family: 'Roboto', sans-serif !important;
+    max-width: 250px !important;
+    margin: 1em auto !important;
+    margin-bottom: 0 !important;
     color: #FFFFFF !important;
 }
 
 .logo-description{
-    font-family: 'Roboto', sans-serif !important;
+    margin: 0 !important;
     color: #fff;
+}
+
+.logo-description{
+    margin: 0 !important;
+}
+
+.recent-posts{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recent{
+    margin: 3em 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300 !important;
+    color: #777;
+}
+
+.post{
+    width: 98%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    border-bottom: 1pt solid rgba(0,0,0,.2);
+}
+
+.post-data{
+    margin: -.5em 0;
+    font-weight: 300;
+    font-size: 17px;
+    color: #666;
+}
+
+.pages-control{
+    margin: 1em 0 !important;
+    text-align: center;
+}
+
+.pages-control a{
+    margin: 0 .5em;
+    padding: 5px 10px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    transition: all .1s linear;
+}
+
+.pages-control a:hover{
+    border-color: #57A3E8;
+    transition: all .1s linear;
+}   
+
+.social{
+    margin: 1em !important;
+    text-align: center;
 }
 
 .footer{
     width: 100%;
     max-width: 100%;
-    padding: .5em 0;
-    background-color: #383434;
+    padding: 1em;
+    background-color: #222;
     text-align: center;
 }
 
 .footer p{
+    font-size: 12pt;
     color: #FFFFFF !important;
-    font-family: 'Roboto', sans-serif !important;
+}
+
+
+@media screen and (min-width: 768px) {
+    .recent-posts{
+        width: 60%;
+        margin: 0 auto;
+    }    
 }

@@ -1,0 +1,48 @@
+
+p{
+    color: #333;
+    margin: 1em auto;
+    font-size: 15pt;
+}
+
+.post{
+    width: 98%;
+    margin: 0 auto;
+    padding: 2em 1em    ;
+}
+
+.post-data{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #888;
+}
+
+.title{
+    font-size: 35pt;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    border-radius: 1px;
+}
+
+.pages-control{
+    margin: 1em auto;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.pages-control a{
+    margin: 0 .5em;
+    padding: 5px 10px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    transition: all .1s linear;
+}
+
+.pages-control a:hover{
+    border-color: #57A3E8;
+    transition: all .1s linear;
+}

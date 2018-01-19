@@ -2,15 +2,45 @@ p{
     margin: 1em 0;
 }
 
+ul{
+    margin: 2em;
+    font-weight: 300 !important;
+}
+
+ul, li{
+    font-size: 17px;
+    color: #555;
+}
+
 .post{
     width: 90%;
     margin: 2em auto;
     margin-top: 2em !important;
 }
 
+.commit{
+    border-left: 10px solid #57A3E8;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: #eee;
+    font-weight: 400 !important;
+    color: #333;
+}
+
+.code{
+    border-left: 10px solid #999;
+    padding: 10px 0;
+    padding-left: 10px;
+    background-color: #eee;
+    font-family: Courier New, Courier, monospace;
+    font-weight: 400 !important;
+    color: #333;
+    line-height: 17px;
+}
+
 img{
     width: 100%;
-    margin: 0;
+    margin: 1em 0 0 0;
     border-radius: 1px;
 }
 

@@ -123,23 +123,42 @@ i {
     color: #FFF;
 }
 
+.cover{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(43, 41, 77, 0.5);
+}
+
 .hero{
     width: 100%;
-    padding: 4em 0;
-    height: 45%;
+    height: 350px !important;
+    padding: 5em 0;
+    padding-bottom: 5em;
     text-align: center;
     display: flex;
     flex-direction: column;
+    background: url('https://unsplash.com/photos/0VGG7cqTwCo/download?force=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #222;
     color: #FFFFFF !important;
+    box-shadow: 3px 1px 9px rgba(0,0,0,.4);
 }
 
 .logo{
+    z-index: 1;
     max-width: 80px !important;
     margin: 0 auto !important;
 }
 
 .logo2{
+    z-index: 1;
     max-width: 250px !important;
     margin: 1em auto !important;
     margin-bottom: 0 !important;
@@ -147,6 +166,7 @@ i {
 }
 
 .logo-description{
+    z-index: 1;
     margin: 0 !important;
     color: #fff;
 }

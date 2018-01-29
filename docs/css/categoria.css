@@ -1,0 +1,31 @@
+
+.categorias{
+    color: #FFF;
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias h1{
+    font-size: 20pt !important;
+    margin: 1em 0;
+}
+
+.categorias a{
+    margin: .3em;
+    color: #FFF;
+    font-size: 17pt;
+}
+
+.categorias a:hover{
+    color: red;
+}
+
+.vazio{
+    color: #777 !important;
+}
+
+.vazio:hover{
+    color: #777;
+}

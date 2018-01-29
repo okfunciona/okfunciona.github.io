@@ -1,81 +1,78 @@
+<!-- 
+
+    Developed by Breno Freitas
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ok funciona!</title>
+    <title>Ok funciona</title>
     <link rel="stylesheet" href="./docs/css/main.css">
-    <link rel="stylesheet" href="./docs/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href=".\docs\images\o.png">
 </head>
 
 <body>
-    <header class="hero">
-        <div class="cover"></div>
+
+    <div class="menu" id="menu">
+        <i class="material-icons" id="btn-close" onclick="closeMenu()">close</i>
+        <p>Menu</p>
+
+        <a href="#">Home</a>
+        <a href="./docs/pages/categorias.html">Tags</a>
+        <a href="#">Sobre</a>
+        <a href="#">Equipe</a>
+    </div>
+    <header class="header">
         <nav class="navbar">
-            <a href="#" class="btnHome">Home</a>
-            <i class="material-icons" id="menuOpen" onclick="openMenu()">menu</i>
+            <i class="material-icons" id="btn-open" onclick="openMenu()">menu</i>
+            <i class="material-icons" id="news">fiber_manual_record</i>
+            <a href="#" id="brand">ok funciona</a>
         </nav>
-        <img class="logo" src="./docs/img/icon.png" alt="icone do ok funciona">
-        <img class="logo2" src="./docs/img/title.png" alt="">
-        <p class="logo-description">Ou pelo o menos deveria...</p>
-
-
-        <div id="menu">
-            <i class="material-icons" id="menuClose" onclick="closeMenu()">close</i>
-            <p class="menu-title">Menu</p>
-            <div class="menu-links">
-                <a href="#">Home</a>
-                <a href="#">Categorias</a>
-                <a href="#">Sobre</a>
-                <a href="#">Equipe</a>
-                <a href="#">Contato</a>
-            </div>
-
-            <div class="social">
-                <a href="#">medium / </a>
-                <a href="#">twitter / </a>
-                <a href="#">instagram / </a>
-                <a href="#">youtube / </a>
-                <a href="#">github</a>
-            </div>
-        </div>
     </header>
 
-    <section class="recent-posts">
-        <p class="recent">Publicados recentemente:</p>
+    <div class="recent">
+        <p class="recent-post">Publicados recentemente</p>
 
-        <div class="post">
-            <p class="post-data">18/jan/2018, em
-                <a href="#">tutorial</a>
-            </p>
-            <a href="./docs/beta/post.html" class="post-title">
-                <h1>Hello World</h1>
+        <div class="card">
+            <a href="#">
+                <h1 class="card-title">Titulo do post</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque ratione labore magnam ab necessitatibus enim cupiditate
+                    doloremque. Dolor vero tenetur molestiae beatae quas eaque saepe dolores dicta ea nemo?
+                </p>
+
+                <div class="tags">
+                    <a href="#" class="tag">tutorial</a>
+                    <a href="#" class="tag">design</a>
+                </div>
             </a>
-            <p class="post-description">
-                Olá pessoas, meu nome é Breno e esse é o meu blog "pessoal". O objetivo desse blog é compartilhar minhas ideias e experiências
-                sobre os assuntos que me interessa com vocês.
-            </p>
         </div>
 
-        <div class="pages-control">
-            <a href="#">Página Anterior</a>
-            <a href="#">Próxima página</a>
-        </div>
-    </section>
-
-    <div class="social">
-        <a href="#">medium / </a>
-        <a href="https://twitter.com/okfunciona">twitter / </a>
-        <a href="https://instagram.com/okfunciona">instagram / </a>
-        <a href="https://www.youtube.com/channel/UC_lMofvehWOXC1SJDOHS3iA?view_as=subscriber">youtube / </a>
-        <a href="https://github.com/okfunciona">github</a>
     </div>
 
     <footer class="footer">
-        <p>Criado por Breno Freitas© • Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Tags</a>
+            <a href="#">Sobre</a>
+            <a href="#">Equipe</a>
+        </div>
+
+        <p> Criado com <i class="fa fa-heart-o heart" aria-hidden="true"></i> por - Breno Freitas</p>
     </footer>
 
     <script src="./docs/javascript/main.js"></script>
